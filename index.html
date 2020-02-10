@@ -27,10 +27,11 @@
         </div>
         </div>
         <div class="comment-bar">
-        <textarea placeholder="tweet your reply">
-        </textarea>
+            <!-- v-model is a vue directive that will link up what the user types here to the var we've 
+            defined, in this case commentText -->
+        <textarea placeholder="tweet your reply" v-model="commentText"></textarea>
         <span class="characters-remaining">
-            280 characters remaining
+            {{ charactersRemaining }} characters remaining
         </span>
         </div>
     </div>
