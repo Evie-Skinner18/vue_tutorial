@@ -1,0 +1,14 @@
+{
+  "name": "vue_tutorial",
+  "version": "1.0.0",
+  "description": "My first Vue project",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evie-Skinner18",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
