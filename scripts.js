@@ -1,49 +1,12 @@
-body {
-    background-color: #e6ecf0;
-    font-family: sans-serif;
+const app = new Vue(
+  {
+    // el is the root component. Tell vue what class/id to look for
+    el : '#app',
+    data: {
+      tweetText: 'Hello bitch!'
+    }
   }
-  
-  .tweet-content {
-    display: flex;
-    padding: 10px;
-  }
-  
-  .status {
-    width: 600px;
-    margin: 20px auto;
-    border-radius: 3px;
-    background-color: white;
-  }
-  
-  .logo {
-    height: 75px;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  
-  .characters-remaining {
-    font-size: 12px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  span {
-    color: grey;
-  }
-  
-  .comment-bar {
-    background-color: #f5f8fa;
-    padding: 10px;
-    border-top: 1px solid #e6ecf0;
-  }
-  
-  textarea {
-    width: 100%;
-    border: 1px solid #1DA1F2;
-    border-radius: 2px;
-    padding: 2px;
-  }
+);
+
+
+

@@ -8,14 +8,16 @@
 </head>
 <body>
     <!--to-do: remix this in your own way!-->
+    <!-- status div is the root component which links up with el in the js file -->
     <div class="status" id="app">
         <div class="tweet-content">
         <img src="https://pbs.twimg.com/profile_images/1070775214370373633/borvu2Xx_400x400.jpg" class="logo" alt="Vue Vixens DC logo">
         <div class="tweet">
             <a href="https://twitter.com/vuevixensdc">Vue Vixens DC</a>
             <span>@VueVixensDC · Mar 20</span>
+            <!-- the value stored in the 'data' property of our root vue component will be rendered here-->
             <p class="tweet-text">
-            Hello, World!
+                {{ tweetText }}
             </p>
             <div class="reactions like">
             <span class="like">
@@ -32,5 +34,8 @@
         </span>
         </div>
     </div>
+    <!-- for this first attempt using CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
