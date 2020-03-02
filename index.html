@@ -19,9 +19,10 @@
             <p class="tweet-text">
                 {{ tweetText }}
             </p>
-            <div class="reactions like">
+            <div class="reactions like" v-on:click="toggleLike">
             <span class="like">
-                <span>♡</span>
+                <span v-if="liked">♥️</span>
+                <span v-else>♡</span>
             </span>
             </div>
         </div>
@@ -29,7 +30,7 @@
         <div class="comment-bar">
             <!-- v-model is a vue directive that will link up what the user types here to the var we've 
             defined, in this case commentText -->
-        <textarea placeholder="tweet your reply" v-model="commentText"></textarea>
+        <textarea placeholder="tweet your reply" v-model="commentText" v-on:input="countCharacters"></textarea>
         <span class="characters-remaining">
             {{ charactersRemaining }} characters remaining
         </span>
