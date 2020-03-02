@@ -25,7 +25,7 @@ Vue.component('tweet', {
         <img src="https://pbs.twimg.com/profile_images/1070775214370373633/borvu2Xx_400x400.jpg" class="logo" alt="Vue Vixens DC logo">
         <div class="tweet">
             <a href="https://twitter.com/vuevixensdc">Vue Vixens DC</a>
-            <span>@VueVixensDC · {{ todaysDate }}</span>
+            <span>@EEvie · {{ todaysDate }}</span>
             <!-- the value stored in the 'data' property of our root vue component will be rendered here-->
             <p class="tweet-text">
                 {{ tweetText }}
