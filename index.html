@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My First Vue App</title>
+</head>
+<body>
+    <div id="app">
+        <tweet v-for="tweet in tweets" v-bind:key="tweet.id" v-bind:tweet-text="tweet.tweetText"></tweet>
+    </div>
+    <!-- for this first attempt using CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="tweet.js"></script>
+</body>
+</html>
