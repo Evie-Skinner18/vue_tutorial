@@ -22,10 +22,10 @@ Vue.component('tweet', {
     <!-- status div is the root component which links up with el in the js file -->
     <div class="status">
         <div class="tweet-content">
-        <img src="https://pbs.twimg.com/profile_images/1070775214370373633/borvu2Xx_400x400.jpg" class="logo" alt="Vue Vixens DC logo">
+        <img src="https://amazon.clikpic.com/claysinclair/images/REPUBLIC_POSTER_small1.JPG" class="logo" alt="Bandera de la República">
         <div class="tweet">
-            <a href="https://twitter.com/vuevixensdc">Vue Vixens DC</a>
-            <span>@EEvie · {{ todaysDate }}</span>
+            <a href="https://www.claysinclair.com/section826034.html">La República Popular de Stroud</a>
+            <span>@Stroud&Proud · {{ todaysDate }}</span>
             <!-- the value stored in the 'data' property of our root vue component will be rendered here-->
             <p class="tweet-text">
                 {{ tweetText }}
